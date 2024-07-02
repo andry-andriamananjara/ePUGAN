@@ -35,9 +35,9 @@ conda-containerize update /projappl/project_2009906/Env/venv_3dpytorch --post-in
 
 If you have additional packages to install, create a new file e.g. update.txt and inside the file, write the package's name as follow
 ```
-pip install package_name -y (if it is from pip)
+pip install package_name -y
 or
-conda install pytorch3d -c pytorch3d -y (if it is from conda)
+conda install -n myenv package_name -y
 ```
 
 then run the command
