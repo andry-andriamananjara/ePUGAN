@@ -518,5 +518,4 @@ if __name__ == "__main__":
     
     #pc=torch.rand(batch, nbpoint,dim).cuda()
     #patch_prediction(pc, patch_num_ratio=4)
-    #predict_from_mesh()
     predict_from_h5()

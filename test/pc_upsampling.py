@@ -247,73 +247,6 @@ def patch_prediction(net, input_pc, patch_num_ratio=3,NUM_POINT=200):
     
     return input_point, pred_pc, cd_list
 
-def predict_from_mesh():
-
-    print(resume)
-    print(non_uniform)
-    
-    # Load model
-    model      = Generator()
-    exp_name   = resume.split('/')[-2]
-    checkpoint = torch.load(resume)
-    model.load_state_dict(checkpoint)
-    model.eval().cuda()
-    
-    path_list  = glob.glob(off_file+"/*.off")
-    
-    cd_list         = []
-    nb_input        = 4096
-    NUM_POINT       = 256
-    PATCH_NUM_RATIO = 3
-    dynamic         = True
-
-    if non_uniform:
-        exp_name = os.path.join(exp_name,"mesh/non_uniform")
-    else:
-        exp_name = os.path.join(exp_name,"mesh/uniform")
-    
-    for path in path_list:
-    #for path in [path_list[0], path_list[1], path_list[2], path_list[3],]:
-        
-        #Read off file
-        gt, input = read_off(off_file=path, gt_nb_pt=4*nb_input, input_nb_pt=nb_input)
-        if non_uniform:
-            input    = nonuniform(gt)
-
-        input, centroid, furthest_distance = pc_normalization(input)
-        
-        # Patch prediction
-        start = time.time()
-        input, pred_pc, _ = patch_prediction(model, input, patch_num_ratio=PATCH_NUM_RATIO, NUM_POINT=NUM_POINT)
-        end         = time.time()
-        
-        input     = input.permute(0,1,2)
-        pred_pc   = pred_pc.permute(0,2,1)
-        pred_pc   = (pred_pc * furthest_distance) + centroid
-        input     = (input * furthest_distance) + centroid
-        
-        # FPS
-        pred_pc_fps, _   = sample_farthest_points(pred_pc.contiguous(), K=4*nb_input, random_start_point=False)
-        
-        #Chamfer distance
-        cd = get_cd_loss(pred_pc_fps, gt)        
-        cd_list.append(cd.item())
-        
-        print('INPUT PC :: ', input.shape,' GT PC :: ', gt.shape,' PRED PC  :: ', pred_pc_fps.shape,' Centroid :: ',centroid.shape,' CD :: ',cd.item(),' Total time :: ',end - start)
-        
-        #Vizualisations
-        pred_pc_fps = pred_pc_fps[0, ...]
-        pred_pc_fps = pred_pc_fps.detach().cpu().numpy()
-        save_predict_pcd(pred_pc_fps, path, exp_name)
-        #plot_save_pcd(pred_pc_fps, path.replace('.','_PRED_'+str(4*nb_input)+'x'+str(NUM_POINT)+'x'+str(PATCH_NUM_RATIO)+'.'), exp_name)#prediction
-        #plot_save_pcd(input, path.replace('.','_INPUT_'+str(nb_input)+'x'+str(NUM_POINT)+'x'+str(PATCH_NUM_RATIO)+'.'), exp_name)#prediction
-        
-        # Remove the implemented batch
-        #data         = data[0, ...]
-        #pred_pc_fps  = pred_pc_fps[0, ...]
-        
-    print('MEAN CD :: ',np.mean(cd_list))
-
 
 def predict_from_h5():
 
@@ -414,5 +347,4 @@ if __name__ == "__main__":
     
     #pc=torch.rand(batch, nbpoint,dim).cuda()
     #patch_prediction(pc, patch_num_ratio=4)
-    #predict_from_mesh()
     predict_from_h5()
