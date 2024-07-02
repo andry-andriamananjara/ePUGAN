@@ -1,5 +1,5 @@
 # ePUGAN based on MAMBA, P3DNet, and arbitrary-scale for point cloud upsampling
-The code in this repository focuses on the Enhanced Point Cloud Upsampling GAN (ePUGAN), a modified version of PU-GAN that incorporates recent advancements in deep learning, including MAMBA, P3DNet, and Arbitrary-Scale techniques. This repository is updated progressively.
+The code in this repository focuses on the Enhanced Point Cloud Upsampling GAN (ePUGAN) model, a modified version of PU-GAN that incorporates recent advancements in deep learning, including MAMBA, P3DNet, and Arbitrary-Scale techniques. Additionally, all C++ dependencies have been replaced with PyTorch3D code. This repository is updated progressively.
 
 <!-- Environment -->
 ## Environment
