@@ -13,9 +13,21 @@ module purge
 module load tykky
 conda-containerize new --prefix venv_3dpytorch pugan_torch.yaml
 
+run python command directly :
 export PATH="/projappl/project_2009906/Env/venv_3dpytorch/bin:$PATH"
-sinteractive -j pytorch3d -A project_2009906 -t 10:00:00 -m 64G -c 8 -p gpu -g 1
+
+run python python command on top of GPU allocation :
+sinteractive -j anyrandom_name -A project_2009906 -t 10:00:00 -m 64G -c 8 -p gpu -g 1
+export PATH="/projappl/project_2009906/Env/venv_3dpytorch/bin:$PATH"
 -->
+
+```
+cd /projappl/project_2009906
+mkdir Env
+cd Env
+mkdir venv_3dpytorch
+
+```
 
 <!-- Installation -->
 
