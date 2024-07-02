@@ -63,3 +63,28 @@ Other datasets are located in `MC_5k/Mydataset`.
 
 <!-- Run Testing -->
 
+## References
+```
+@InProceedings{He_2023_CVPR,
+    author    = {He, Yun and Tang, Danhang and Zhang, Yinda and Xue, Xiangyang and Fu, Yanwei},
+    title     = {Grad-PU: Arbitrary-Scale Point Cloud Upsampling via Gradient Descent with Learned Distance Functions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2023}
+}
+
+@InProceedings{Qian_2021_CVPR,
+    author    = {Qian, Guocheng and Abualshour, Abdulellah and Li, Guohao and Thabet, Ali and Ghanem, Bernard},
+    title     = {PU-GCN: Point Cloud Upsampling Using Graph Convolutional Networks},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {11683-11692}
+}
+
+@inproceedings{li2019pugan,
+     title={PU-GAN: a Point Cloud Upsampling Adversarial Network},
+     author={Li, Ruihui and Li, Xianzhi and Fu, Chi-Wing and Cohen-Or, Daniel and Heng, Pheng-Ann},
+     booktitle = {{IEEE} International Conference on Computer Vision ({ICCV})},
+     year = {2019}
+ }
+```
