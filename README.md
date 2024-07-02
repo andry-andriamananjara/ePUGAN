@@ -90,4 +90,11 @@ Other datasets are located in `MC_5k/Mydataset`.
      booktitle = {{IEEE} International Conference on Computer Vision ({ICCV})},
      year = {2019}
  }
+
+@inproceedings{yu2018pu,
+     title={PU-Net: Point Cloud Upsampling Network},
+     author={Yu, Lequan and Li, Xianzhi and Fu, Chi-Wing and Cohen-Or, Daniel and Heng, Pheng-Ann},
+     booktitle = {Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+     year = {2018}
+}
 ```
