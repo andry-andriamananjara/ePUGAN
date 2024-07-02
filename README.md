@@ -6,14 +6,14 @@ The code in this repository focuses on the Enhanced Point Cloud Upsampling GAN (
 
 This section is only relevant for the CSC environment. If you are not using the CSC supercomputer, please proceed directly to the next section, **installation**.
 
-Create folders **Env** and **venv_3dpytorch** as follow :
+Create folders **Env** and **venv_3dpytorch** :
 ```
 cd /projappl/project_2009906
 mkdir Env
 cd Env
 mkdir venv_3dpytorch
 ```
-Load purge and tykky, modules of CSC, a below :
+Load purge and tykky, modules of CSC :
 ```
 module purge
 module load tykky
