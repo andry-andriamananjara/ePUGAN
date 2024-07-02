@@ -3,7 +3,13 @@ The code in this repository focuses on the Enhanced Point Cloud Upsampling GAN (
 
 <!-- Environment -->
 
-<!-- Download dataset -->
+<!-- Installation -->
+
+<!-- Additional configurations -->
+
+<!-- Dataset -->
+
+<!-- New dataset -->
 
 <!-- Creating new dataset from mesh file -->
 
