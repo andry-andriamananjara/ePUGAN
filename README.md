@@ -52,11 +52,15 @@ If settings need to be adjusted, such as changing the data location, parameter v
 
 ## Dataset
 <!-- Dataset -->
-During the training, we use [PU-NET](https://github.com/yulequan/PU-Net) and  [PU1K](https://github.com/guochengqian/PU-GCN) datasets.
-Other datasets are located in `MC_5k/Mydataset`.
+During the training, we use [PU-NET](https://github.com/yulequan/PU-Net) and  [PU1K](https://github.com/guochengqian/PU-GCN) datasets. 
 
-## New dataset
-<!-- New dataset -->
+Given the necessity for training with both uniform and non-uniform datasets, the current availability is limited to non-uniform datasets with fixed input. Moreover, there are issues with the existing code used to generate datasets from mesh. Below, we introduce a new mesh data generator code aimed at creating versatile input datasets, whether uniform or non-uniform.
+```
+XXXXXX
+XXXXXX
+XXXXXX
+```
+Other datasets are located in `MC_5k/Mydataset`.
 
 <!-- Creating new dataset from mesh file -->
 
