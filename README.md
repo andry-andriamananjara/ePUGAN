@@ -30,6 +30,18 @@ export PATH="/projappl/project_2009906/Env/venv_3dpytorch/bin:$PATH"
 After exporting the environment, install **requirements.txt** and **update.txt** :
 ```
 conda-containerize update /projappl/project_2009906/Env/venv_3dpytorch --post-install requirements.txt
+conda-containerize update /projappl/project_2009906/Env/venv_3dpytorch --post-install req_pytorch3d.txt
+```
+
+If you have additional packages to install, create a new file e.g. update.txt and inside the file, write the package as follow
+```
+pip install package_name (if it is from pip)
+or
+conda install pytorch3d -c pytorch3d -y (if it is from conda)
+```
+
+then run the command
+```
 conda-containerize update /projappl/project_2009906/Env/venv_3dpytorch --post-install update.txt
 ```
 
