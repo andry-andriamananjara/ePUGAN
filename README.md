@@ -13,7 +13,7 @@ mkdir Env
 cd Env
 mkdir venv_3dpytorch
 ```
-Load purge and tykky, modules of CSC, then create **pugan_torch.yaml** :
+Load purge and tykky, modules of CSC, then build the environment from **pugan_torch.yaml** :
 ```
 module purge
 module load tykky
