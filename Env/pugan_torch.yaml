@@ -1,0 +1,10 @@
+name: pugan_torch
+channels:
+  - conda-forge
+  - anaconda
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.8.0=h357f687_0
+  - python-dateutil=2.8.2=pyhd3eb1b0_0
