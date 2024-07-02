@@ -52,15 +52,18 @@ If settings need to be adjusted, such as changing the data location, parameter v
 
 ## Dataset
 <!-- Dataset -->
-During the training, we use PU1K dataset from PU-GCN can be found here https://github.com/guochengqian/PU-GCN.
+During the training, we use PU1K dataset from PU-GCN which can be found here https://github.com/guochengqian/PU-GCN.
 Other datasets are located in `MC_5k/Mydataset`.
 
+## New dataset
 <!-- New dataset -->
 
 <!-- Creating new dataset from mesh file -->
 
+## Training
 <!-- Run Training -->
 
+## Testing
 <!-- Run Testing -->
 
 ## References
