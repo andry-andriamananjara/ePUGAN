@@ -6,18 +6,19 @@ The code in this repository focuses on the Enhanced Point Cloud Upsampling GAN (
 
 This section is only relevant for the CSC environment. If you are not using the CSC supercomputer, please proceed directly to the next section, **installation**.
 
+Create folders **Env** and **venv_3dpytorch**
 ```
 cd /projappl/project_2009906
 mkdir Env
 cd Env
 mkdir venv_3dpytorch
+```
 
-
+```
 module purge
 module load tykky
 conda-containerize new --prefix venv_3dpytorch pugan_torch.yaml
 ```
-
 
 Export the environment as shown below to enable running Python commands:
 ```
@@ -26,7 +27,13 @@ export PATH="/projappl/project_2009906/Env/venv_3dpytorch/bin:$PATH"
 
 ## Installation
 <!-- Installation -->
+After exporting the environment, install **requirements.txt** and **update.txt** :
+```
+conda-containerize update /projappl/project_2009906/Env/venv_3dpytorch --post-install requirements.txt
+conda-containerize update /projappl/project_2009906/Env/venv_3dpytorch --post-install update.txt
+```
 
+## Additional configurations
 <!-- Additional configurations -->
 
 <!-- Dataset -->
