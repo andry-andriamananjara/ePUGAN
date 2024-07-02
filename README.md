@@ -3,9 +3,8 @@ The code in this repository focuses on the Enhanced Point Cloud Upsampling GAN (
 
 <!-- Environment -->
 ## Environment
-<!-- This section is only for CSC environment, you can skip if you are not using CSC supercomputer-->
 
-This section is only for CSC environment, you can skip if you are not using CSC supercomputer.
+This section is only relevant for the CSC environment. If you are not using the CSC supercomputer, please proceed directly to the next section.
 
 ```
 cd /projappl/project_2009906
