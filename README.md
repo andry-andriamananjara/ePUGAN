@@ -19,14 +19,8 @@ conda-containerize new --prefix venv_3dpytorch pugan_torch.yaml
 ```
 
 
-run python command directly :
+Export the environment as shown below to enable running Python commands:
 ```
-export PATH="/projappl/project_2009906/Env/venv_3dpytorch/bin:$PATH"
-```
-
-run python python command on top of GPU allocation :
-```
-sinteractive -j anyrandom_name -A project_2009906 -t 10:00:00 -m 64G -c 8 -p gpu -g 1
 export PATH="/projappl/project_2009906/Env/venv_3dpytorch/bin:$PATH"
 ```
 
