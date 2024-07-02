@@ -1,0 +1,113 @@
+conda install -c conda-forge python_abi -y
+pip install absl-py==0.9.0
+pip install astor==0.8.1
+pip install attrs==19.3.0
+pip install backcall==0.1.0
+pip install bleach==3.1.3
+pip install cachetools==4.0.0
+pip install certifi==2019.11.28
+pip install chardet==3.0.4
+pip install colored-traceback==0.3.0
+pip install cycler==0.10.0
+pip install decorator==4.4.1
+pip install defusedxml==0.6.0
+pip install docutils==0.16
+pip install entrypoints==0.3
+pip install enum34==1.1.10
+pip install future==0.18.2
+pip install gast==0.3.3
+pip install google-auth==1.12.0
+pip install google-auth-oauthlib==0.4.1
+pip install grpcio==1.27.2
+conda install -y h5py
+pip install hydra-core==0.11.3
+pip install idna==2.8
+pip install imageio==2.27
+pip install imageio-ffmpeg==0.3.0
+pip install importlib-metadata==4.8.3
+pip install ipdb==0.13.2
+pip install ipykernel==5.2.0
+pip install ipython==7.13.0
+pip install ipython-genutils==0.2.0
+pip install ipywidgets==7.6.0
+pip install jedi==0.16.0
+pip install Jinja2==3.0.3
+pip install joblib==1.1.1
+pip install jsonpatch==1.25
+pip install jsonpointer==2.0
+conda install -y jsonschema
+pip install jupyter-client==7.4.4
+pip install Keras-Applications==1.0.8
+pip install Keras-Preprocessing==1.1.0
+pip install kiwisolver==1.1.0
+pip install lmdb==0.98
+pip install Markdown==3.1.1
+pip install MarkupSafe==2.0
+conda install -y matplotlib
+pip install mistune==2.0.3
+pip install mock==3.0.5
+pip install moviepy==1.0.1
+pip install msgpack==1.0.0
+pip install msgpack-numpy==0.4.4.3
+pip install nbconvert==6.4.4
+pip install nbformat==5.3.0
+pip install networkx==2.8
+pip install notebook==6.0.3
+conda install -y numpy
+pip install oauthlib==3.1.0
+pip install omegaconf==1.4.1
+pip install open3d==0.14.1
+conda install -y pandas
+pip install pandocfilters==1.4.2
+pip install parso==0.6.2
+pip install pexpect==4.8.0
+pip install pickleshare==0.7.5
+pip install Pillow==9.0.1
+pip install plyfile==0.7.2
+pip install proglog==0.1.9
+pip install prometheus-client==0.7.1
+pip install prompt-toolkit==3.0.3
+pip install protobuf==3.11.3
+pip install ptyprocess==0.6.0
+pip install pyasn1==0.4.8
+pip install pyasn1-modules==0.2.8
+pip install Pygments==2.7.4
+pip install pyparsing==2.4.6
+pip install pyrsistent==0.16.0
+pip install python-dateutil==2.8.1
+pip install pytorch-lightning==0.7.1
+pip install pytz==2019.3
+pip install PyWavelets==1.1.1
+pip install PyYAML==5.4.1
+pip install requests==2.31.0
+pip install requests-oauthlib==1.3.0
+pip install rsa==4.0
+conda install -y scipy
+pip install Send2Trash==1.8.2
+pip install six==1.14.0
+pip install statistics==1.0.3.5
+pip install termcolor==1.1.0
+pip install terminado==0.8.3
+pip install testpath==0.4.4
+pip install tqdm==4.42.1
+pip install traitlets==5.6.0
+pip install urllib3==1.25.8
+pip install visdom==0.1.8.9
+pip install wcwidth==0.1.8
+pip install webencodings==0.5.1
+pip install websocket-client==0.57.0
+pip install Werkzeug==0.16.1
+pip install widgetsnbextension==3.5.1
+pip install zipp==3.1.0
+conda install -y pyzmq
+conda install -y scikit-image==0.16.2
+conda install -y scikit-learn
+conda install -y conda-forge::scikit-video
+conda install -y tensorboard
+conda install -y tensorboard-plugin-wit
+conda install -y tensorboardX
+conda install -y tensorflow
+conda install -y tensorflow-estimator
+conda install -y pytorch::pytorch
+conda install -y conda-forge::torchfile
+conda install -y conda-forge::tornado

@@ -1,0 +1,11 @@
+conda install opencv -y
+pip install point-cloud-utils
+conda install -y pytorch=1.13.0 torchvision pytorch-cuda=11.6 -c pytorch -c nvidia
+conda install -y -c fvcore -c iopath -c conda-forge fvcore iopath
+curl -LO https://github.com/NVIDIA/cub/archive/1.10.0.tar.gz
+tar xzf 1.10.0.tar.gz
+export CUB_HOME=$PWD/cub-1.10.0
+conda install pytorch3d -c pytorch3d -y
+
+pip install causal-conv1d>=1.2.0
+pip install mamba-ssm
