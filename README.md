@@ -33,7 +33,7 @@ conda-containerize update /projappl/project_2009906/Env/venv_3dpytorch --post-in
 conda-containerize update /projappl/project_2009906/Env/venv_3dpytorch --post-install req_pytorch3d.txt
 ```
 
-If you have additional packages to install, create a new file e.g. update.txt and inside the file, write the package as follow
+If you have additional packages to install, create a new file e.g. update.txt and inside the file, write the package's name as follow
 ```
 pip install package_name (if it is from pip)
 or
