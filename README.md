@@ -65,6 +65,12 @@ python off_to_xyz.py --isTrain=train                   --datasetdir=Mydataset/PU
 python off_to_xyz.py --isTrain=test                    --datasetdir=Mydataset/PU1K/non_uniform/test/original_meshes
 ```
 
+If you have many separate .xyz and .pcd files that are large and need to be cropped, follow examples below.
+```
+cd MC_5K
+python crop_point_cloud.py --isTrain=test --datasetdir=Mydataset/PU_LiDAR
+python crop_point_cloud.py --isTrain=test --datasetdir=Mydataset/PU_LiDAR/rectified_scans_local
+```
 <!-- Creating new dataset from mesh file -->
 
 ## Training
