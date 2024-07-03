@@ -92,7 +92,6 @@ If there is a specific chekpoint to use for testing uniform or non-uniform input
 ```
 cd test
 python pc_upsampling.py --gen_attention=mamba2                       --feat_ext=P3DConv --non_uniform False  --resume=../checkpoints/trainpu1kGen2_P3Dconv_uniform/G_iter_89.pth   --path=../MC_5k/Mydataset/PU1K/non_uniform/test/pu1k_uniform_2048_8192_test.h5
-
 python pc_upsampling.py --gen_attention=mamba2                       --feat_ext=P3DConv --non_uniform True   --resume=../checkpoints/trainpu1kGen2_P3Dconv_uniform/G_iter_89.pth   --path=../MC_5k/Mydataset/PU1K/non_uniform/test/pu1k_non_uniform_2048_8192_test.h5
 ```
 
@@ -100,7 +99,6 @@ If all chekpoints are needed to use for testing uniform or non-uniform inputs, f
 ```
 cd test
 python pc_upsampling_all_epochs.py --gen_attention=mamba2                       --feat_ext=P3DConv --non_uniform False  --resume=../checkpoints/trainpu1kGen2_P3Dconv_uniform/G_iter_89.pth   --path=../MC_5k/Mydataset/PU1K/non_uniform/test/pu1k_uniform_2048_8192_test.h5
-
 python pc_upsampling_all_epochs.py --gen_attention=mamba2                       --feat_ext=P3DConv --non_uniform True   --resume=../checkpoints/trainpu1kGen2_P3Dconv_uniform/G_iter_89.pth   --path=../MC_5k/Mydataset/PU1K/non_uniform/test/pu1k_non_uniform_2048_8192_test.h5
 ```
 
@@ -108,7 +106,6 @@ If testing and visualization with an xyz file is needed, follow the example belo
 ```
 cd test
 python pc_upsampling_xyz.py --gen_attention=mamba --dis_attention=mamba --non_uniform False --resume=../checkpoints/trainpu1kGenDis_default_uniform/G_iter_99.pth --path=--path=../MC_5k/Mydataset/PU_LiDAR/xyz_file
-
 python pc_upsampling_xyz.py --gen_attention=mamba --dis_attention=mamba --non_uniform True  --resume=../checkpoints/trainpu1kGenDis_default_uniform/G_iter_99.pth --path=--path=../MC_5k/Mydataset/PU_LiDAR/xyz_file
 ```
 
