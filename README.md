@@ -65,6 +65,16 @@ XXXXXX
 
 ## Training
 <!-- Run Training -->
+```
+cd train
+python train.py --exp_name=PU1K_non_uniform --gpu=1 --use_gan --batch_size=12           --dataname=nameofdataset 
+```
+By default, the input is non-uniform. If a uniform input is needed, simply add --uniform to the command line. The available datasets are `punet`, `pugan`, and `pu1k`. For more details, refer to `data/data_loader.py`.
+
+```
+cd train
+python train.py --exp_name=anyexperiencename     --gpu=1 --use_gan --batch_size=12 --uniform --dataname=nameofdataset
+```
 
 ## Testing
 <!-- Run Testing -->
