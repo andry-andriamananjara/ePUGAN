@@ -48,7 +48,7 @@ conda-containerize update /projappl/project_2009906/Env/venv_3dpytorch --post-in
 ## Additional configurations
 <!-- Additional configurations -->
 
-If settings need to be adjusted, such as changing the data location, parameter values, or checkpoint paths, manual changes can be made in the folder **option**. This folder contains all the default configurations for both training and testing sessions.
+If settings need to be adjusted, such as changing the data location, parameter values, or checkpoint paths, manual changes can be made in files `option/train_option.py` and `option/test_option.py`. This folder contains all the default configurations for both training and testing sessions.
 
 ## Dataset
 <!-- Dataset -->
@@ -71,7 +71,7 @@ python train.py --exp_name=PU1K_non_uniform --gpu=1 --use_gan --batch_size=12   
 ```
 By default, the input is non-uniform. If a uniform input is needed, simply add `--uniform` to the command line. The available datasets are `punet`, `pugan`, and `pu1k`. For more details of dataset, refer to `data/data_loader.py`.
 
-Below is an example of how to train the ePUGAN model using the `pu1k` dataset with uniform input. If no specifications are provided for the feature extraction, generator, and discriminator, the model defaults to the original PU-GAN.
+Below is an example of how to train the ePUGAN model using the `pu1k` dataset with uniform input. **If no specifications are provided for the feature extraction, generator, and discriminator, the model defaults to the original PU-GAN**.
 ```
 cd train
 python train.py --exp_name=anyexperiencename     --gpu=1 --use_gan --batch_size=12 --uniform --dataname=pu1k
