@@ -78,6 +78,7 @@ python train.py --exp_name=anyexperiencename     --gpu=1 --use_gan --batch_size=
 ```
 Below is an example of how to train the ePUGAN model using the `pu1k` dataset with uniform and non-uniform inputs, MAMBA in generator, and P3DNet as Feature Extraction.
 ```
+cd train
 python train.py --exp_name=anyexperiencename1     --gpu=1 --use_gan --batch_size=12 --uniform --dataname=pu1k --gen_attention=mamba --feat_ext=P3DConv
 python train.py --exp_name=anyexperiencename2     --gpu=1 --use_gan --batch_size=12           --dataname=pu1k --gen_attention=mamba --feat_ext=P3DConv
 ```
