@@ -87,11 +87,18 @@ For more details of the training specification, please refer to the bash file `p
 ## Testing
 <!-- Run Testing -->
 
-If you use specific chekpoint for testing in uniform or non-uniform inputs, follow below expample. Further details can be found in bash file `cd_hd_p2f.sh`.
+If there is a specific chekpoint to use for testing uniform or non-uniform inputs, follow below expample. Here we use `G_iter_89.pth`. Further details can be found in the bash file `cd_hd_p2f.sh`.
 ```
 python pc_upsampling.py --gen_attention=mamba2                       --feat_ext=P3DConv --non_uniform False  --resume=../checkpoints/trainpu1kGen2_P3Dconv_uniform/G_iter_89.pth   --path=../MC_5k/Mydataset/PU1K/non_uniform/test/pu1k_uniform_2048_8192_test.h5
 
 python pc_upsampling.py --gen_attention=mamba2                       --feat_ext=P3DConv --non_uniform True   --resume=../checkpoints/trainpu1kGen2_P3Dconv_uniform/G_iter_89.pth   --path=../MC_5k/Mydataset/PU1K/non_uniform/test/pu1k_non_uniform_2048_8192_test.h5
+```
+
+If all chekpoints are needed to use for testing uniform or non-uniform inputs, follow below expample. Further details can be found in the bash file `cd_hd_p2f_full_epochs.sh`.
+```
+python pc_upsampling_all_epochs.py --gen_attention=mamba2                       --feat_ext=P3DConv --non_uniform False  --resume=../checkpoints/trainpu1kGen2_P3Dconv_uniform/G_iter_89.pth   --path=../MC_5k/Mydataset/PU1K/non_uniform/test/pu1k_uniform_2048_8192_test.h5
+
+python pc_upsampling_all_epochs.py --gen_attention=mamba2                       --feat_ext=P3DConv --non_uniform True   --resume=../checkpoints/trainpu1kGen2_P3Dconv_uniform/G_iter_89.pth   --path=../MC_5k/Mydataset/PU1K/non_uniform/test/pu1k_non_uniform_2048_8192_test.h5
 ```
 
 ## References
