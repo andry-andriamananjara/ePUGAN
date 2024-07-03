@@ -69,11 +69,12 @@ XXXXXX
 cd train
 python train.py --exp_name=PU1K_non_uniform --gpu=1 --use_gan --batch_size=12           --dataname=nameofdataset 
 ```
-By default, the input is non-uniform. If a uniform input is needed, simply add --uniform to the command line. The available datasets are `punet`, `pugan`, and `pu1k`. For more details, refer to `data/data_loader.py`.
+By default, the input is non-uniform. If a uniform input is needed, simply add --uniform to the command line. The available datasets are `punet`, `pugan`, and `pu1k`. For more details of dataset, refer to `data/data_loader.py`.
 
+Below is an example of how to train the ePUGAN model using the `pu1k`  dataset. If no specifications are provided for the feature extraction, generator, and discriminator, the model defaults to the original PU-GAN.
 ```
 cd train
-python train.py --exp_name=anyexperiencename     --gpu=1 --use_gan --batch_size=12 --uniform --dataname=nameofdataset
+python train.py --exp_name=anyexperiencename     --gpu=1 --use_gan --batch_size=12 --uniform --dataname=pu1k
 ```
 
 ## Testing
