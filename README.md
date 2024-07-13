@@ -25,7 +25,7 @@ Export the environment as shown below to enable running Python commands:
 export PATH="/projappl/project_2009906/Env/venv_3dpytorch/bin:$PATH"
 ```
 
-Apply for GPU resource in CSC using `sinteractive` by following the general rule below
+Apply for GPU resources in CSC using `sinteractive` by following the general rule below
 ```
 sinteractive -j anysessionname -A project_ID_of_yourproject -t hh:mm:ss -m 64G -c nb_core -p gpu -g nb_gpu
 ```
